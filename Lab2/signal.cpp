@@ -1,3 +1,9 @@
+/*!
+@author	Ger Dobbs
+@date 03/10/2017
+@version 1.0
+*/
+
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>
@@ -7,18 +13,18 @@ void taskOne(std::shared_ptr<Semaphore> theSemaphore1, std::shared_ptr<Semaphore
   std::cout << "must ";
   theSemaphore2 -> Signal();
   theSemaphore1 -> Wait();
-  std::cout << "This ";
-  std::cout << "will"<<std::endl;
+  std::cout << "print ";
+  std::cout << "first "<<std::endl;
   theSemaphore2->Signal();
 }
 void taskTwo(std::shared_ptr<Semaphore> theSemaphore1, std::shared_ptr<Semaphore> theSemaphore2){
   theSemaphore2->Wait();
-  std::cout <<"print ";
-  std::cout << "first ";
+  std::cout <<"This ";
+  std::cout << "will ";
   theSemaphore1 -> Signal();
   theSemaphore2 -> Wait();
   std::cout << "appear ";
-  std::cout << "second"<<std::endl;
+  std::cout << "second "<<std::endl;
 }
 
 int main(void){

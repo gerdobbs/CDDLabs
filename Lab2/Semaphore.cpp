@@ -1,3 +1,9 @@
+/*!
+@author	Ger Dobbs
+@date 03/10/2017
+@version 1.0
+*/
+
 #include "Semaphore.h"
 /*! \class Semaphore
     \brief A Semaphore Implementation
