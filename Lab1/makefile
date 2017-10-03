@@ -13,7 +13,7 @@ CFLAGS= -std=c++11 -pthread -I.
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 ALL: signal.o Semaphore.o
-	$(CC) -o Semaphore Semaphore.o signal.o $(CFLAGS)
+	$(CC) -o signal  Semaphore.o signal.o $(CFLAGS)
 
 
 #this is customary and just deletes all .o files
