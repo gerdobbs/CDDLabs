@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classSemaphore" kind="class"><name>Semaphore</name>
+    <member refid="classSemaphore_1a1456f105008b0c309f41211afbdd5fee" kind="variable"><name>m_uiCount</name></member>
+    <member refid="classSemaphore_1a6490f302f311da3ce373a81672673296" kind="variable"><name>m_mutex</name></member>
+    <member refid="classSemaphore_1a2b04d3a53f1fc1a13d7ed5d19d9e2be9" kind="variable"><name>m_condition</name></member>
+    <member refid="classSemaphore_1a0d9290d316636875ca85d1d78950a817" kind="function"><name>Semaphore</name></member>
+    <member refid="classSemaphore_1a72aabebf026e3a8b1f3e4d0fa8ee1eda" kind="function"><name>Wait</name></member>
+    <member refid="classSemaphore_1a7f700173ae86ae623684109066e07656" kind="function"><name>Wait</name></member>
+    <member refid="classSemaphore_1a86f92f738b4486439b296d8e235895f2" kind="function"><name>Signal</name></member>
+  </compound>
+  <compound refid="Semaphore_8cpp" kind="file"><name>Semaphore.cpp</name>
+  </compound>
+  <compound refid="Semaphore_8h" kind="file"><name>Semaphore.h</name>
+  </compound>
+  <compound refid="signal_8cpp" kind="file"><name>signal.cpp</name>
+    <member refid="signal_8cpp_1a2696073bbedb6b55e6a52d2180c2a9b3" kind="function"><name>taskOne</name></member>
+    <member refid="signal_8cpp_1ae4ea9570be601d182fa473c7ca431852" kind="function"><name>taskTwo</name></member>
+    <member refid="signal_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>

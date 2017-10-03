@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classSemaphore" kind="class" language="C++" prot="public">
+    <compoundname>Semaphore</compoundname>
+    <includes refid="Semaphore_8h" local="no">Semaphore.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSemaphore_1a1456f105008b0c309f41211afbdd5fee" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Semaphore::m_uiCount</definition>
+        <argsstring></argsstring>
+        <name>m_uiCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Holds the <ref refid="classSemaphore" kindref="compound">Semaphore</ref> count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="19" column="1" bodyfile="Semaphore.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSemaphore_1a6490f302f311da3ce373a81672673296" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Semaphore::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="20" column="1" bodyfile="Semaphore.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSemaphore_1a2b04d3a53f1fc1a13d7ed5d19d9e2be9" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable Semaphore::m_condition</definition>
+        <argsstring></argsstring>
+        <name>m_condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="21" column="1" bodyfile="Semaphore.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSemaphore_1a0d9290d316636875ca85d1d78950a817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semaphore::Semaphore</definition>
+        <argsstring>(unsigned int uiCount=0)</argsstring>
+        <name>Semaphore</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiCount</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="24" column="1" bodyfile="Semaphore.h" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1a72aabebf026e3a8b1f3e4d0fa8ee1eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semaphore::Wait</definition>
+        <argsstring>()</argsstring>
+        <name>Wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="26" column="1" bodyfile="Semaphore.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1a7f700173ae86ae623684109066e07656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Semaphore::Wait</definition>
+        <argsstring>(const std::chrono::duration&lt; R, P &gt; &amp;crRelTime)</argsstring>
+        <name>Wait</name>
+        <param>
+          <type>const std::chrono::duration&lt; R, P &gt; &amp;</type>
+          <declname>crRelTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="28" column="1" bodyfile="Semaphore.cpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1a86f92f738b4486439b296d8e235895f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semaphore::Signal</definition>
+        <argsstring>()</argsstring>
+        <name>Signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semaphore.h" line="29" column="1" bodyfile="Semaphore.cpp" bodystart="35" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classSemaphore" kindref="compound">Semaphore</ref> Implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Ger Dobbs </para></simplesect>
+<simplesect kind="date"><para>02/10/2017 </para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+Uses C++11 features such as mutex and condition variables to implement <ref refid="classSemaphore" kindref="compound">Semaphore</ref> </para>    </detaileddescription>
+    <location file="Semaphore.h" line="17" column="1" bodyfile="Semaphore.h" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classSemaphore_1a2b04d3a53f1fc1a13d7ed5d19d9e2be9" prot="private" virt="non-virtual"><scope>Semaphore</scope><name>m_condition</name></member>
+      <member refid="classSemaphore_1a6490f302f311da3ce373a81672673296" prot="private" virt="non-virtual"><scope>Semaphore</scope><name>m_mutex</name></member>
+      <member refid="classSemaphore_1a1456f105008b0c309f41211afbdd5fee" prot="private" virt="non-virtual"><scope>Semaphore</scope><name>m_uiCount</name></member>
+      <member refid="classSemaphore_1a0d9290d316636875ca85d1d78950a817" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Semaphore</name></member>
+      <member refid="classSemaphore_1a86f92f738b4486439b296d8e235895f2" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Signal</name></member>
+      <member refid="classSemaphore_1a72aabebf026e3a8b1f3e4d0fa8ee1eda" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Wait</name></member>
+      <member refid="classSemaphore_1a7f700173ae86ae623684109066e07656" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
