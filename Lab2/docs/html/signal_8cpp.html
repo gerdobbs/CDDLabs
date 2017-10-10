@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab2 Project: signal.cpp File Reference</title>
+<title>Lab2 - Rendevous: signal.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab2 Project
-   &#160;<span id="projectnumber">1.0</span>
+   <div id="projectname">Lab2 - Rendevous
+   &#160;<span id="projectnumber">0.6</span>
    </div>
-   <div id="projectbrief">Rendevous</div>
   </td>
  </tr>
  </tbody>
@@ -66,25 +65,23 @@ $(function() {
 <div class="title">signal.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Semaphore_8h_source.html">Semaphore.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_semaphore_8h_source.html">Semaphore.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for signal.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="signal_8cpp__incl.png" border="0" usemap="#signal_8cpp" alt=""/></div>
-<map name="signal_8cpp" id="signal_8cpp">
-<area shape="rect" id="node2" href="Semaphore_8h.html" title="Semaphore.h" alt="" coords="103,80,201,107"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="signal_8cpp__incl.svg" width="386" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="signal_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af69e60ea49b764bb9bb6a9ef0a9a1b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8cpp.html#af69e60ea49b764bb9bb6a9ef0a9a1b91">taskOne</a> (std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt; theSemaphore1, std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt; theSemaphore2)</td></tr>
+<tr class="memitem:af69e60ea49b764bb9bb6a9ef0a9a1b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8cpp.html#af69e60ea49b764bb9bb6a9ef0a9a1b91">taskOne</a> (std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; theSemaphore1, std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; theSemaphore2)</td></tr>
 <tr class="separator:af69e60ea49b764bb9bb6a9ef0a9a1b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab42d5be62abc6e36071c0e348101b89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8cpp.html#ab42d5be62abc6e36071c0e348101b89b">taskTwo</a> (std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt; theSemaphore1, std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt; theSemaphore2)</td></tr>
+<tr class="memitem:ab42d5be62abc6e36071c0e348101b89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8cpp.html#ab42d5be62abc6e36071c0e348101b89b">taskTwo</a> (std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; theSemaphore1, std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; theSemaphore2)</td></tr>
 <tr class="separator:ab42d5be62abc6e36071c0e348101b89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,10 +105,7 @@ Functions</h2></td></tr>
 <p>&lt; Launch the threads </p>
 
 <p class="definition">Definition at line <a class="el" href="signal_8cpp_source.html#l00030">30</a> of file <a class="el" href="signal_8cpp_source.html">signal.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::thread threadOne, threadTwo;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::shared_ptr&lt;Semaphore&gt; sem1( <span class="keyword">new</span> <a class="code" href="classSemaphore.html">Semaphore</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::shared_ptr&lt;Semaphore&gt; sem2( <span class="keyword">new</span> <a class="code" href="classSemaphore.html">Semaphore</a>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  threadOne=std::thread(<a class="code" href="signal_8cpp.html#ab42d5be62abc6e36071c0e348101b89b">taskTwo</a>,sem1,sem2);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  threadTwo=std::thread(<a class="code" href="signal_8cpp.html#af69e60ea49b764bb9bb6a9ef0a9a1b91">taskOne</a>,sem1,sem2);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Launched from the main\n&quot;</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  threadOne.join();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  threadTwo.join();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="classSemaphore_html"><div class="ttname"><a href="classSemaphore.html">Semaphore</a></div><div class="ttdoc">A Semaphore Implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Semaphore_8h_source.html#l00016">Semaphore.h:16</a></div></div>
-<div class="ttc" id="signal_8cpp_html_ab42d5be62abc6e36071c0e348101b89b"><div class="ttname"><a href="signal_8cpp.html#ab42d5be62abc6e36071c0e348101b89b">taskTwo</a></div><div class="ttdeci">void taskTwo(std::shared_ptr&lt; Semaphore &gt; theSemaphore1, std::shared_ptr&lt; Semaphore &gt; theSemaphore2)</div><div class="ttdef"><b>Definition:</b> <a href="signal_8cpp_source.html#l00020">signal.cpp:20</a></div></div>
-<div class="ttc" id="signal_8cpp_html_af69e60ea49b764bb9bb6a9ef0a9a1b91"><div class="ttname"><a href="signal_8cpp.html#af69e60ea49b764bb9bb6a9ef0a9a1b91">taskOne</a></div><div class="ttdeci">void taskOne(std::shared_ptr&lt; Semaphore &gt; theSemaphore1, std::shared_ptr&lt; Semaphore &gt; theSemaphore2)</div><div class="ttdef"><b>Definition:</b> <a href="signal_8cpp_source.html#l00011">signal.cpp:11</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af69e60ea49b764bb9bb6a9ef0a9a1b91"></a>
@@ -123,13 +117,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void taskOne </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt;&#160;</td>
           <td class="paramname"><em>theSemaphore1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt;&#160;</td>
           <td class="paramname"><em>theSemaphore2</em>&#160;</td>
         </tr>
         <tr>
@@ -144,7 +138,7 @@ Functions</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="signal_8cpp_source.html#l00011">11</a> of file <a class="el" href="signal_8cpp_source.html">signal.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                                                            {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  std::cout &lt;&lt;<span class="stringliteral">&quot;I &quot;</span>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;must &quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  theSemaphore2 -&gt; Signal();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  theSemaphore1 -&gt; Wait();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;print &quot;</span>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;first &quot;</span>&lt;&lt;std::endl;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  theSemaphore2-&gt;Signal();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab42d5be62abc6e36071c0e348101b89b"></a>
@@ -156,13 +150,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void taskTwo </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt;&#160;</td>
           <td class="paramname"><em>theSemaphore1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classSemaphore.html">Semaphore</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt;&#160;</td>
           <td class="paramname"><em>theSemaphore2</em>&#160;</td>
         </tr>
         <tr>
@@ -174,7 +168,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="signal_8cpp_source.html#l00020">20</a> of file <a class="el" href="signal_8cpp_source.html">signal.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                                                            {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  theSemaphore2-&gt;Wait();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  std::cout &lt;&lt;<span class="stringliteral">&quot;This &quot;</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;will &quot;</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  theSemaphore1 -&gt; Signal();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  theSemaphore2 -&gt; Wait();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;appear &quot;</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;second &quot;</span>&lt;&lt;std::endl;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div></div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->

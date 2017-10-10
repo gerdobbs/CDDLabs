@@ -4,6 +4,11 @@
 @version 1.0
 */
 
+/*!
+A Lab to show signalling in action.
+The main function creartes 2 threads.
+One thread signals the other using a semaphore
+ */
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>

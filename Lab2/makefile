@@ -1,7 +1,6 @@
-#Joseph Kehoe 13/9/2017
-#Second improved Makefile
+#Ger Dobbs 10/10/2017
+# Makefile with a CLEAN rule
 #Used to contain commands to compile projects
-#Equivalent(?) to a project file in VStudio -- only better!
 #See http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ for info.
 
 
@@ -13,7 +12,7 @@ CFLAGS= -std=c++11 -pthread -I.
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 ALL: signal.o Semaphore.o
-	$(CC) -o signal Semaphore.o signal.o $(CFLAGS)
+	$(CC) -o rendevous  Semaphore.o signal.o $(CFLAGS)
 
 
 #this is customary and just deletes all .o files

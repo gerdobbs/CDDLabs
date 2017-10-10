@@ -8,14 +8,8 @@
 CC=g++
 CFLAGS= -std=c++11 -pthread -I.
 
-#This rule says that each .o file depends on a .cpp file of the same name
-%.o: %.cpp
-	$(CC) -c -o $@ $< $(CFLAGS)
-
 ALL: signal.o Semaphore.o
-	$(CC) -o signal  Semaphore.o signal.o $(CFLAGS)
+	$(CC) -o signal  Semaphore.cpp signal.cpp $(CFLAGS)
 
 
-#this is customary and just deletes all .o files
-CLEAN:
-	rm *.o
+

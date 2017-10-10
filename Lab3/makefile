@@ -1,6 +1,6 @@
-#Ger Dobbs 13/9/2017
+#Ger Dobbs 10/10/2017
 #Used to contain commands to compile projects
-#Equivalent(?) to a project file in VStudio -- only better!
+#
 #See http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ for info.
 
 
@@ -11,8 +11,8 @@ CFLAGS= -std=c++11 -pthread -I.
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
-ALL: signal.o Semaphore.o
-	$(CC) -o signal  Semaphore.o signal.o $(CFLAGS) $(DEBUGFLAGS)
+ALL: mutex.o Semaphore.o
+	$(CC) -o mutex  Semaphore.o mutex.o $(CFLAGS) $(DEBUGFLAGS)
 
 
 #this is a rule to run the debugger
