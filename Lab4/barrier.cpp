@@ -13,10 +13,16 @@ Demonstration of a reusable barrier.
 
 int numThreads = 5;
 int threadCount = 0;
+/**
+This function will be passed to each thread we wish to run.
+The threads will rendezvous before running the Code.
+They will then wait for each other again at the last barrier so that they can be run together again in a loop.
+*/
 void taskOne(std::shared_ptr<Semaphore> theMutex, std::shared_ptr<Semaphore> barrierA, std::shared_ptr<Semaphore> barrierB,int threadNumber){
   	theMutex->Wait();
   	threadCount++;
   	if(threadCount == numThreads){
+	  ///2 barriers used to implement a turnstile.
   	  barrierB->Wait();
   	  barrierA->Signal();
   	}
