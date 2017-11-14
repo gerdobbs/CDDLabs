@@ -14,7 +14,7 @@
 
 class Barrier{
 public:
- 	static int threadCount;
+ 	// int threadCount;
 	int threadNumber;
 	static void taskOne(std::shared_ptr<Semaphore> ,std::shared_ptr<Semaphore>,std::shared_ptr<Semaphore>,int,int,int);
 	
